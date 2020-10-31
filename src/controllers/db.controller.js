@@ -57,7 +57,7 @@ const url = process.env.DB_HOST;
 
 }) */
 
-function conectMongo(collectionName) {
+function connectMongo(collectionName) {
 
     return new Promise(function (resolve, reject) {
         MongoClient.connect(url, {
@@ -87,4 +87,4 @@ function conectMongo(collectionName) {
 }
 
 
-module.exports = conectMongo;
+module.exports = connectMongo;
