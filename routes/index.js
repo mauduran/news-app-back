@@ -16,6 +16,7 @@ router.get('/news', newsController.getNews);
 
 router.get('/sources', newsController.getSources);
 
+
 router.post('/auth', function (req, res) {
   console.log('Auth: ', req.body);
   res.send('Ok');
